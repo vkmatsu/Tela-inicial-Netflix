@@ -1,11 +1,10 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Estilo do cabeçalho */
+
 header {
     background-color: #333;
     color: #fff;
@@ -33,15 +32,21 @@ nav .logo {
 }
 
 nav .navegacao {
+    display: flex;
+    align-items: center;
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
 nav .navegacao li a {
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
+    padding: 10px 15px;
 }
 
 nav .navegacao li a:hover {
@@ -54,7 +59,7 @@ nav .perfil a {
     text-decoration: none;
 }
 
-/* Seção hero */
+
 .hero {
     text-align: center;
     background-color: #222;
@@ -86,25 +91,27 @@ nav .perfil a {
     background-color: #b20710;
 }
 
-/* Estilo da seção do carrossel */
+
 .carousel-section {
+    align-items: center;
     margin: 40px 0;
     text-align: center;
 }
 
 .carousel-section h2 {
+    align-items: center;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Carrossel */
+
 .carousel-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+max-height: 500px;
+object-fit: contain;
+margin: auto;
 }
 
-/* Estilo do rodapé */
+
 footer {
     background-color: #222;
     color: #fff;
@@ -119,13 +126,15 @@ footer p {
     font-size: 1rem;
 }
 
-/* Estilo do botão de controle do carrossel */
-.carousel-control-prev-icon,
+
+.carousel-section,
 .carousel-control-next-icon {
-    background-color: #333;
+    background-color: #fcf7f7;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.5);
-} 
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: #222;
+}
+
+
